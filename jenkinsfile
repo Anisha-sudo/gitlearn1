@@ -1,9 +1,7 @@
-
-
-pipeline { 
-    agent any
-    stages {
-        stage('Clone Git') {
+pipeline{ 
+agent any
+ stages{
+     stage('Clone Git') {
             steps {
                 git 'https://github.com/Anisha-sudo/gitlearn1.git'
             }
